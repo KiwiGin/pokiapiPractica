@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+@{
+    ViewBag.Title = "Buscar Pokémon";
+}
+
+<h2>Buscar Pokémon</h2>
+
+@using (Html.BeginForm("Details", "Pokemon", FormMethod.Get))
+{
+    <input type="text" name="name" placeholder="Nombre del Pokémon" required />
+    <input type="submit" value="Buscar" />
+}
+
+
